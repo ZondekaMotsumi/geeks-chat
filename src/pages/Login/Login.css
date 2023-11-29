@@ -1,28 +1,46 @@
 
-body {
-    background-color: rgb(28, 82, 174);
+.body{
+    background-color: #ffffff;
+}
+
+.loginCard{
+    background-color: #ffffff;
+    margin-top: 80px;
+
+}
+.login-icon{
+    font-size: 30px;
+    fill: black;
+}
+.heading {
+    font-weight: 600;
+    color: #1a83ff;
+}
+
+.text{
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.pic{
+    margin-top: -70px;
+}
+
+.logo {
+    background-color: transparent;
+}
+
+.headingLogo{
     display: flex;
     justify-content: center;
-    align-content: center;
-    width: 100%;
     align-items: center;
-    height: 100vh;
 }
-
-.logo {}
-
-.box {
-    border: 1px solid rgb(144, 174, 225);
-    background-color: rgb(144, 174, 225);
-}
-
 .g-btn {
     width: 100% !important;
     height: 40px !important;
     line-height: 40px !important;
     font-size: 15px !important;
 }
-
 .g-btn>div,
 .g-btn>div>svg {
     width: 40px !important;
@@ -30,5 +48,12 @@ body {
 }
 
 .forgotpassword{
-    
+    font-size: large;
+}
+
+.left{
+    height: 75%;
+}
+.right{
+    height: 75%;
 }

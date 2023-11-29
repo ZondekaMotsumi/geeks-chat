@@ -1,0 +1,57 @@
+.chat-page{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-chat{
+    border: 1px solid white;
+    border-radius: 9px;
+    display: flex;
+    width: 85%;
+    height: 95%;
+    overflow: hidden;
+}
+.sidebar{
+    flex: 1;
+    background-color: white;
+
+}
+.chat{
+    flex: 3;
+    background-color: darkgray;
+}
+
+.profile-view{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    background-color: darkgray;
+
+    .logo-cv{
+        font-weight: bold;
+    }
+
+    .user-avatar{
+        gap: 10px;
+        display: flex;
+    }
+    img{
+        background-color: white;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .button-logout{
+        background-color:dimgrey;
+        border: none;
+    }
+}
+
+
+
+
