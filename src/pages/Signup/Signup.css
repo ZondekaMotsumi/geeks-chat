@@ -11,7 +11,7 @@ body {
 
 .logo {}
 
-.box {
+.Body {
     border: 1px solid rgb(144, 174, 225);
     background-color: rgb(144, 174, 225);
 }
@@ -27,4 +27,8 @@ body {
 .g-btn>div>svg {
     width: 40px !important;
     height: 38px !important;
+}
+
+.check{
+    cursor: pointer;
 }

@@ -4,6 +4,7 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
+    updateProfile,
   signOut,
 } from "firebase/auth";
 import { createContext, useContext, useEffect, useState } from "react";
@@ -17,8 +18,15 @@ export function UserAuthContextProvider({ children }) {
   function logIn(email, password) {
     return signInWithEmailAndPassword(auth, email, password);
   }
-  function signUp(email, password) {
-    return createUserWithEmailAndPassword(auth, email, password);
+  function signUp(email, password, userName, profilePic) {
+    return createUserWithEmailAndPassword(auth, email, password)
+    .then ((userCredential) => {
+      const user =userCredential.user;
+      return updateProfile(user, {
+        displayName: userName,
+        photoURL: profilePic,
+      });
+    });
   }
   function logOut() {
     return signOut(auth);

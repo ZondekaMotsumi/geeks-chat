@@ -9,7 +9,9 @@ body {
     height: 100vh;
 }
 
-.logo {}
+.logo {
+    background-color: white;
+}
 
 .box {
     border: 1px solid rgb(144, 174, 225);
@@ -23,6 +25,7 @@ body {
     font-size: 15px !important;
 }
 
+
 .g-btn>div,
 .g-btn>div>svg {
     width: 40px !important;
@@ -30,5 +33,6 @@ body {
 }
 
 .forgotpassword{
-    
+    font-size: large;
+
 }

@@ -38,8 +38,8 @@ const Login = () => {
       <div className="p-4 box">
         <img
             className="logo"
-            src="https://img.freepik.com/free-vector/hand-drawn-communication-logo_23-2149821709.jpg?w=826&t=st=1700661151~exp=1700661751~hmac=320bdcd2bcc99eae5f6fd2303e5348f8be211e31ec7fd28c14dcda3cd34edcbf"
-            alt=""
+            src="../../images"
+            alt="Logo"
             width="100px"
             height="100px"
         />

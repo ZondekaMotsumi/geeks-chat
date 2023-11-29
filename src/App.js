@@ -26,17 +26,10 @@ function App() {
                   </ProtectedRoute>
                 }
               />
-                <Route
-                    path="/forgotpassword"
-                    element={
-                    <ProtectedRoute>
-                        <ForgotPassword />
-                    </ProtectedRoute>
-                    }
-                    />
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
+                <Route path="/forgotpassword" element={<ForgotPassword />} />
             </Routes>
           </UserAuthContextProvider>
         </Col>
