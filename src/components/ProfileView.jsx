@@ -1,8 +1,8 @@
 import React from "react";
 import { Button} from "react-bootstrap";
-import {auth} from '../../services/firebase'
-import SearchBar from "../SearchBar/SearchBar"
-import { useUserAuth } from "../../context/UserAuthContext";
+import {auth} from '../services/firebase'
+import SearchBar from "./SearchBar"
+import { useUserAuth } from "../context/UserAuthContext";
 
 const ProfileView = () => {
     const { logOut } = useUserAuth();

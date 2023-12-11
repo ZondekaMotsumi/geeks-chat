@@ -1,5 +1,5 @@
 import React from "react";
-import ProfileView from "../ProfileView/ProfileView";
+import ProfileView from "./ProfileView";
 
 const SideBar = () => {
 
