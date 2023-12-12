@@ -22,6 +22,62 @@
 .chat{
     flex: 3;
     background-color: darkgray;
+
+    .chatInfo{
+        height: 50px;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        color: black ;
+    }
+
+    .chatIcons{
+        display: flex;
+        gap: 10px;
+
+        img{
+            height: 24px;
+            cursor: pointer;
+        }
+    }
+
+    .messages{
+        padding: 10px;
+        height: calc(100% - 140px);
+    }
+
+    .message-input{
+        display: flex;
+        background-color: white ;
+        height: 50px;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+
+        .emoji-button{
+            cursor: pointer;
+        }
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        ::placeholder{
+            color: black ;
+        }
+
+        .send{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
 }
 
 .profile-view{

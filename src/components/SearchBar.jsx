@@ -6,7 +6,7 @@ const Searchbar = () => {
           <input className="search-text" type='search' placeholder='Search' />
           <button className="search-but" />
       </div>
-  )
-}
+  );
+};
 
 export default Searchbar;
