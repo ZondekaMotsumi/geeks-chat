@@ -32,9 +32,15 @@ function Navbar() {
                    <li className="nav-items">
                        <NavLink
                            to="/"
-                           className={({ isActive}) =>
-                               "nav-links" + (isActive ? "activated" : "")
-                       }
+                           className={({ isActive }) => {
+                               let classNames = "nav-links";
+
+                               if (isActive) {
+                                   classNames += " activated";
+                               }
+
+                               return classNames;
+                           }}
                            onClick={mobileMenu} > Home </NavLink>
                    </li>
                    <li className="nav-items">

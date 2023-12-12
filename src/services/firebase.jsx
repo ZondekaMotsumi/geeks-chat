@@ -1,4 +1,3 @@
-
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
@@ -12,6 +11,5 @@ const firebaseConfig = {
   measurementId: "G-1154GBZRE3",
 };
 
-// Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
